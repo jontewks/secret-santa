@@ -1,0 +1,23 @@
+{
+  "name": "secret-santa",
+  "version": "1.0.0",
+  "description": "Shuffle a list of names for secret santa matching",
+  "main": "hohoho.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hohoho.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jontewks/secret-santa.git"
+  },
+  "author": "Jon Tewksbury",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jontewks/secret-santa/issues"
+  },
+  "homepage": "https://github.com/jontewks/secret-santa#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
