@@ -1,7 +1,7 @@
 'use strict'
 
-const readList = require('./util/read-list')
-const createMatches = require('./util/create-matches')
+const readList = require('../util/read-list')
+const createMatches = require('../util/create-matches')
 const _ = require('lodash')
 const assert = require('assert')
 

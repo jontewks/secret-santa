@@ -4,8 +4,8 @@
   "description": "Shuffle a list of names for secret santa matching",
   "main": "hohoho.js",
   "scripts": {
-    "test": "mocha tests.js",
-    "start": "node hohoho.js"
+    "test": "mocha",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
