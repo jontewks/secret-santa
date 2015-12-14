@@ -4,7 +4,7 @@
   "description": "Shuffle a list of names for secret santa matching",
   "main": "hohoho.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha tests.js",
     "start": "node hohoho.js"
   },
   "repository": {
@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/jontewks/secret-santa#readme",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "assert": "^1.3.0",
+    "bluebird": "^3.0.6",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.4"
   }
 }
