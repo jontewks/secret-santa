@@ -1,24 +1,10 @@
-'use strict'
+const shuffle = require('lodash.shuffle')
 
-const fs = require('fs')
-const _ = require('lodash')
-const readList = require('./util/read-list')
-const createMatches = require('./util/create-matches')
+const names = require('./names')
 
-return readList()
-	.then(data => {
-		const names = JSON.parse(data)
+const shuffledNames = shuffle(names)
 
-		if (_.uniq(names).length !== names.length) {
-			console.error('DUPLICATES DETECTED, YOU HAVE BEEN VERY NAUGHTY')
-			process.exit(1)
-		}
-
-		const matches = createMatches(names)
-
-		_.forEach(matches, (val, key) => {
-			console.log(key, 'is secret santa for', val)
-		})
-
-		return matches
-	})
+shuffledNames.forEach((name, index) => {
+	const santee = shuffledNames[index + 1]
+	console.log(`${name} is secret santa for ${santee || shuffledNames[0]}`)
+})
